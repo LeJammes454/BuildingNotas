@@ -41,7 +41,7 @@ import java.util.regex.Pattern
 
 class CreateNoteFragment : BaseFragment(),EasyPermissions.PermissionCallbacks,EasyPermissions.RationaleCallbacks{
 
-    var selectedColor = "#171C26"
+    var selectedColor = "#7B7B7C"
     var currentDate:String? = null
     private var READ_STORAGE_PERM = 123
     private var REQUEST_CODE_IMAGE = 456
@@ -210,16 +210,16 @@ class CreateNoteFragment : BaseFragment(),EasyPermissions.PermissionCallbacks,Ea
     private fun saveNote(){
 
         if (etNoteTitle.text.isNullOrEmpty()){
-            Toast.makeText(context,"Note Title is Required",Toast.LENGTH_SHORT).show()
+            Toast.makeText(context,"La nota requiere Titulo",Toast.LENGTH_SHORT).show()
         }
         else if (etNoteSubTitle.text.isNullOrEmpty()){
 
-            Toast.makeText(context,"Note Sub Title is Required",Toast.LENGTH_SHORT).show()
+            Toast.makeText(context,"La nota requiere un Subtitulo",Toast.LENGTH_SHORT).show()
         }
 
         else if (etNoteDesc.text.isNullOrEmpty()){
 
-            Toast.makeText(context,"Note Description is Required",Toast.LENGTH_SHORT).show()
+            Toast.makeText(context,"La nota requiere una descripcion",Toast.LENGTH_SHORT).show()
         }
 
         else{

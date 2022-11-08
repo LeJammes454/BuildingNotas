@@ -1,5 +1,6 @@
 package com.codingwithme.notesapp
 
+import android.content.res.ColorStateList
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -35,7 +36,6 @@ class HomeFragment : BaseFragment() {
 
 
         return inflater.inflate(R.layout.fragment_home, container, false)
-
     }
 
     companion object {

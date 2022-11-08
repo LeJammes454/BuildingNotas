@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
+    android:background="@color/ColorBase"
     tools:context=".MainActivity">
 
     <ImageView
@@ -17,7 +17,7 @@
         android:src="@drawable/ic_back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/ColorWhite" />
+        app:tint="@color/ColorBlackNote" />
 
     <ImageView
         android:id="@+id/imgDone"
@@ -29,7 +29,7 @@
         android:src="@drawable/ic_tick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="@color/ColorWhite" />
+        app:tint="@color/ColorBlackNote" />
 
 
     <EditText
@@ -44,8 +44,8 @@
         android:inputType="text"
         android:maxLines="1"
         android:padding="@dimen/_10sdp"
-        android:textColor="@color/ColorWhite"
-        android:textColorHint="@color/ColorGray"
+        android:textColor="@color/ColorBlackNote"
+        android:textColorHint="@color/ColorDarkBlack"
         android:textSize="@dimen/_14ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,8 +64,8 @@
         android:fontFamily="@font/manrope_bold"
         android:maxLines="1"
         android:paddingStart="@dimen/_10sdp"
-        android:textColor="@color/ColorGray"
-        android:textColorHint="@color/ColorGray"
+        android:textColor="@color/ColorBlackNote"
+        android:textColorHint="@color/ColorBlackNote"
         android:textSize="@dimen/_8ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,13 +82,6 @@
         app:layout_constraintTop_toBottomOf="@id/tvDateTime">
 
 
-        <View
-            android:id="@+id/colorView"
-            android:layout_width="@dimen/_5sdp"
-            android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/_5sdp"
-            android:background="@color/ColorBlue" />
-
         <EditText
             android:id="@+id/etNoteSubTitle"
             android:layout_width="match_parent"
@@ -100,8 +93,8 @@
             android:inputType="text"
             android:maxLines="1"
             android:padding="@dimen/_10sdp"
-            android:textColor="@color/ColorWhite"
-            android:textColorHint="@color/ColorGray"
+            android:textColor="@color/ColorBlackNote"
+            android:textColorHint="@color/ColorBlackNote"
             android:textSize="@dimen/_10ssp" />
     </LinearLayout>
 
@@ -245,8 +238,8 @@
         android:hint="@string/notes_desc"
         android:inputType="textMultiLine"
         android:padding="@dimen/_10sdp"
-        android:textColor="@color/ColorWhite"
-        android:textColorHint="@color/ColorGray"
+        android:textColor="@color/ColorBlackNote"
+        android:textColorHint="@color/ColorBlackNote"
         android:textSize="@dimen/_12ssp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -264,8 +257,18 @@
             android:layout_width="@dimen/_24sdp"
             android:layout_height="@dimen/_24sdp"
             android:layout_gravity="center"
-            android:src="@drawable/img_bar" />
+            android:src="@drawable/ic_menu" />
     </FrameLayout>
+
+    <View
+        android:id="@+id/colorView"
+        android:layout_width="388dp"
+        android:layout_height="9dp"
+        android:background="@color/ColorBlue"
+        app:layout_constraintBottom_toTopOf="@+id/etNoteTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.159"
+        tools:layout_editor_absoluteX="10dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
